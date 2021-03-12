@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyke's Lecture Time</title>
+</head>
+<body>
+    <div id="demo" height="100px" width="100px"></div>
+    <hr>
+    <img src="img_car.jpg" alt="Nice car" style="width:100%">
+    <p>
+        A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels.
+    </p>
+    <p>
+        (Wikipedia)
+    </p>
+    <p id="demo"></p>
+
+
+    <script src="lecture.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyke's Lecture Time</title>
+</head>
+<body>
+    <h2>A Simple Ajax Call Application</h2>
+    <ul>
+        <li>
+            <button type="button" onclick="ajaxCall()">Request</button>
+            <button type="button" onclick="clearMain()">Clear List</button>
+        </li>
+    </ul>
+    <div id="main"></div>
+    <script>
+    
+      function ajaxCall() {
+          let ajaxRequest = new XMLHttpRequest();
+    
+          ajaxRequest.onreadystatechange = function() {
+              if (ajaxRequest.readyState == XMLHttpRequest.DONE ) {
+                 if (ajaxRequest.status == 200) {
+                     let myDiv = document.getElementById('main');
+                     let newDiv = document.createElement('div');
+                     newDiv.innerHTML = ajaxRequest.responseText;
+                     myDiv.appendChild(newDiv);
+                 }
+                 else if (ajaxRequest.status == 400) {
+                    console.log('There was an error 400');
+                 }
+                 else {
+                    console.log('something else other than 200 was returned');
+                 }
+              }
+          };
+    
+          ajaxRequest.open("GET", 'http://jsonplaceholder.typicode.com/todos', true);
+          ajaxRequest.send();
+      }
+    
+      function clearMain(){
+        document.getElementById('main').innerHTML = "";
+      }
+    
+    </script>
+    
+</body>
+</html> -->
